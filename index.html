@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width" initial-scale="1">
+    <title>Which Twitch?</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    <script src="js/script.js" charset="utf-8"></script>
+    <link rel="stylesheet" href="css/master.css">
+  </head>
+  <body>
+    <div id="outer-container" class="row">
+      <div id="inner-container" class="container">
+
+        <div id="header-container" class="row">
+
+          <div id="title-container">
+            <h1>Which Twitch?</h1>
+            <p class="small">A Twitch stream status viewer</p>
+          </div>
+
+          <div id="filters">
+            <div class="selector active" id="all-filter">
+              <div class="circle"></div>
+              <p>
+                All
+              </p>
+            </div>
+            <div class="selector" id="online-filter">
+              <div class="circle"></div>
+              <p>
+                Online
+              </p>
+            </div>
+            <div class="selector" id="offline-filter">
+              <div class="circle"></div>
+              <p>
+                Offline
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div id="main" class="col-md-12">
+          <ul id="twitch-channels"></div>
+        </div>
+
+      </div> <!-- inner-container -->
+    </div> <!-- outer-container -->
+
+  </body>
+</html>

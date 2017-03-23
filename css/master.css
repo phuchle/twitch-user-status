@@ -1,0 +1,119 @@
+body {
+  background-color: black;
+}
+
+#outer-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    height: 100vh;
+    padding-top: 50px;
+}
+
+#inner-container {
+  display: flex;
+  flex-direction: column;
+  background-color: #f2f2f2;
+  border-radius: 5px;
+  min-height: 300px;
+  padding: 20px;
+  margin-bottom: 50px;
+}
+
+#header-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#title-container {
+  border-bottom: 5px solid #333333;
+  padding-left: 40px;
+  width: 100%;
+}
+
+#filters {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 200px;
+  overflow: hidden;
+}
+
+.selector {
+  background-color: #b3b3b3;
+  border: 1px solid white;
+  overflow: hidden;
+  padding-left: 5px;
+  float: right;
+  clear: right;
+  margin: 5px 0px 5px 0px;
+  width: 20px;
+  height: 24px;
+  -webkit-transition: width 0.4s linear;
+  transition: width 0.4s linear;
+}
+
+.active, .selector:hover {
+  width: 100px !important;
+  -webkit-transition: width 0.4s linear;
+  transition: width 0.4s linear;
+  cursor: pointer;
+}
+
+.circle {
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  border: 1px solid #000000;
+  float: left;
+  margin: 5px 5px 5px 0px;
+}
+
+#all-filter .circle {
+  background-color: #000000;
+}
+#online-filter .circle {
+  background-color: #C4FFC4;
+}
+
+#inner-container h1 {
+  color: purple;
+}
+
+#main {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: space-between;
+}
+
+ul {
+  padding: 0;
+}
+
+.online {
+  background-color: #C4FFC4;
+}
+
+#twitch-channels li p {
+  width: 200px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+#twitch-channels li {
+  text-decoration: none;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  width: 80px;
+  height: 80px;
+  background-color: #333333;
+}
